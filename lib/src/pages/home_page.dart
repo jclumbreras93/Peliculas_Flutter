@@ -15,6 +15,7 @@ class HomePage extends StatelessWidget {
     peliculasProvider.getPopular();
 
     return Scaffold(
+      //backgroundColor: Colors.black,
       appBar: AppBar(
         centerTitle: false,
         title: Text('Peliculas en cines'),
