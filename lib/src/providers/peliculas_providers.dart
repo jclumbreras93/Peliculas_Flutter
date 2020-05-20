@@ -9,7 +9,7 @@ import '../models/pelicula_model.dart';
 
 class PeliculasProvider {
 
-  String _apikey = 'APIKEY';
+  String _apikey = 'de578edf04f797065c114959dfad0dcd';
   String _url = 'api.themoviedb.org';
   String _language = 'es-ES';
 

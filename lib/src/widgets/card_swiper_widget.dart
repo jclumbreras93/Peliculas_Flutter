@@ -17,10 +17,11 @@ class CardSwiper extends StatelessWidget {
     return Container(
       //padding: EdgeInsets.only(top: 5.0),
       child: Container(
+        height: _screenSize.height * 0.6,
         child: Column(
           children: <Widget>[
-            Text('Cartelera', style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.w700)),
-            SizedBox(height: 20.0),
+            Text('Cartelera', style: TextStyle(fontSize: 25.0, fontWeight: FontWeight.w500)),
+            SizedBox(height: 10.0),
             Swiper(
               layout: SwiperLayout.STACK,
               itemWidth: _screenSize.width * 0.7,

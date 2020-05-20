@@ -40,7 +40,9 @@ class MovieHorizontal extends StatelessWidget {
 
 
   Widget _tarjeta(BuildContext context, Pelicula pelicula) {
+    final _screenSize = MediaQuery.of(context).size;
     final tarjeta = Container(
+      height: _screenSize.height * 0.4,
         margin: EdgeInsets.only(right: 15.0),
         child: Column(
           children: <Widget>[
@@ -50,7 +52,7 @@ class MovieHorizontal extends StatelessWidget {
                 placeholder: AssetImage('assets/img/no-image.jpg'), 
                 image: NetworkImage(pelicula.getPosterImg()),
                 fit: BoxFit.cover,
-                height: 160.0,
+                height: _screenSize.height * 0.17,
               ),
             ),
             SizedBox(height: 5.0,),
