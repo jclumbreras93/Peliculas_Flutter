@@ -75,7 +75,17 @@ class Pelicula {
     if ( posterPath == null) {
       return 'https://cdn11.bigcommerce.com/s-hcp6qon/stencil/26c38110-5b4f-0138-d43f-0242ac11000e/icons/icon-no-image.svg';
     } else {
-      return 'https://image.tmdb.org/t/p/w1280/$posterPath';
+      return 'https://image.tmdb.org/t/p/w500/$posterPath';
+    }
+    
+  }
+
+
+  getBackgroundImg() {
+    if ( backdropPath == null) {
+      return 'https://cdn11.bigcommerce.com/s-hcp6qon/stencil/26c38110-5b4f-0138-d43f-0242ac11000e/icons/icon-no-image.svg';
+    } else {
+      return 'https://image.tmdb.org/t/p/w500/$backdropPath';
     }
     
   }
