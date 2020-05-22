@@ -1,3 +1,4 @@
+import 'package:Peliculas_Flutter/src/search/search_delegate.dart';
 import 'package:flutter/material.dart';
 
 import '../providers/peliculas_providers.dart';
@@ -23,7 +24,13 @@ class HomePage extends StatelessWidget {
         actions: <Widget>[
           IconButton(
             icon: Icon(Icons.search), 
-            onPressed: () {},
+            onPressed: () {
+              showSearch(
+                context: context, 
+                delegate: DataSearch(),
+                //query: 
+              );
+            },
           )
         ],
       ),

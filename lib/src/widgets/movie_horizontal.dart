@@ -37,6 +37,8 @@ class MovieHorizontal extends StatelessWidget {
 
 
   Widget _tarjeta(BuildContext context, Pelicula pelicula) {
+
+    pelicula.uniqueId = '${pelicula.id}-poster';
     final _screenSize = MediaQuery.of(context).size;
     final tarjeta = Container(
       height: _screenSize.height * 0.4,
@@ -44,7 +46,7 @@ class MovieHorizontal extends StatelessWidget {
         child: Column(
           children: <Widget>[
             Hero(
-              tag: pelicula.id,
+              tag: pelicula.uniqueId,
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(20.0),
                 child: FadeInImage(
