@@ -79,7 +79,8 @@ class PeliculaDetalle extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 Text(pelicula.title, style: Theme.of(context).textTheme.title, overflow: TextOverflow.ellipsis,),
-                Text(pelicula.originalTitle, style: Theme.of(context).textTheme.subhead, overflow: TextOverflow.ellipsis),
+                //Text(pelicula.originalTitle, style: Theme.of(context).textTheme.subhead, overflow: TextOverflow.ellipsis),
+                Text('Año de lanzamiento: ${pelicula.releaseDate.substring(0,4)}', style: Theme.of(context).textTheme.subhead),
                 Row(
                   children: <Widget>[
                     Icon(Icons.star_border),
